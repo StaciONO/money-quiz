@@ -92,7 +92,10 @@ export default function MoneyPersonalityQuiz() {
 • 問自己：這筆錢是在滋養我,還是在消耗我？
 • 信任金錢會回流 - 當你相信,宇宙就會回應
 
-記住：被宇宙包養的人,不需要變成另一個人。你只需要調整頻率,讓金錢發揮最大價值,豐盛自然發生。`
+記住：被宇宙包養的人,不需要變成另一個人。你只需要調整頻率,讓金錢發揮最大價值,豐盛自然發生。`,
+      courseName: "拆掉天花板工具箱",
+      coursePrice: "NT$ 1,111",
+      courseLink: "https://www.back2ono.com/offers/Gn3Uw2Rp/checkout"
     },
     thoughtful: {
       name: "金錢思考者",
@@ -112,7 +115,10 @@ export default function MoneyPersonalityQuiz() {
 • 區分「划算」和「有價值」- 便宜不一定是最好的投資
 • 允許自己「不完美」地行動 - 有時候 70 分的決定比 100 分的猶豫更有價值
 
-記住：被宇宙包養的人,懂得在理性與直覺之間取得平衡。當你信任自己,豐盛會更容易流動。`
+記住：被宇宙包養的人,懂得在理性與直覺之間取得平衡。當你信任自己,豐盛會更容易流動。`,
+      courseName: "金錢01：拿回你的宇宙印鈔機",
+      coursePrice: "NT$ 3,520",
+      courseLink: "https://www.back2ono.com/offers/Ky4sJuJz/checkout"
     },
     controller: {
       name: "金錢守護者",
@@ -130,7 +136,10 @@ export default function MoneyPersonalityQuiz() {
 • 相信豐盛是流動的 - 當你願意讓錢流出去,它會以更大的形式回來
 • 區分「真實的風險」和「想像的恐懼」- 很多擔心其實不會發生
 
-記住：被宇宙包養的人,在流動中感到安全。當你放手,反而會得到更多。`
+記住：被宇宙包養的人,在流動中感到安全。當你放手,反而會得到更多。`,
+      courseName: "金錢02：你可以即時創造",
+      coursePrice: "NT$ 3,520",
+      courseLink: "https://www.back2ono.com/offers/5kLWEL8D/checkout"
     },
     planner: {
       name: "金錢規劃師",
@@ -148,7 +157,10 @@ export default function MoneyPersonalityQuiz() {
 • 先接收宇宙給你的可能性,再來評估整合 - 有時最好的機會超越原本的計畫
 • 享受過程,而不只是結果 - 豐盛就在當下,不在未來
 
-記住：被宇宙包養的人,有方向但不執著。當你結合計畫與流動,奇蹟會更容易發生。`
+記住：被宇宙包養的人,有方向但不執著。當你結合計畫與流動,奇蹟會更容易發生。`,
+      courseName: "宇宙印鈔機完整課程",
+      coursePrice: "NT$ 36,800",
+      courseLink: "https://www.back2ono.com/offers/2gzFJ3Jk/checkout"
     },
     balanced: {
       name: "金錢平衡者",
@@ -166,7 +178,10 @@ export default function MoneyPersonalityQuiz() {
 • 問自己：我到底想要什麼樣的生活？金錢如何支持這個願景？
 • 從小步驟開始 - 不需要一次改變全部,慢慢調整就好
 
-記住：被宇宙包養的人,從接納自己開始。當你不再內耗,能量會開始流動,豐盛自然會來。`
+記住：被宇宙包養的人,從接納自己開始。當你不再內耗,能量會開始流動,豐盛自然會來。`,
+      courseName: "拆掉天花板工具箱",
+      coursePrice: "NT$ 1,111",
+      courseLink: "https://www.back2ono.com/offers/Gn3Uw2Rp/checkout"
     }
   };
 
@@ -442,6 +457,29 @@ export default function MoneyPersonalityQuiz() {
                             {line}
                           </p>
                         ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-2xl p-6 md:p-8 mt-6 border-2 border-gray-200">
+                      <h3 className="text-2xl font-bold text-black mb-4">
+                        🎓 為你推薦的課程
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-between">
+                          <div className="text-left">
+                            <p className="text-xl font-bold text-black">{personalityTypes[result].courseName}</p>
+                            <p className="text-lg text-gray-600 mt-1">{personalityTypes[result].coursePrice}</p>
+                          </div>
+                        </div>
+                        <a
+                          href={personalityTypes[result].courseLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block w-full px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-center"
+                          style={{ backgroundColor: '#ffe000', color: '#000000' }}
+                        >
+                          我想了解更多
+                        </a>
                       </div>
                     </div>
                   </div>
